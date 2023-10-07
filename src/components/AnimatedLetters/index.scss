@@ -1,0 +1,33 @@
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
+
+
+.text-animate-hover{
+    min-width:10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover{
+        animation: shine 1s infinite alternate;
+        color: #0099ff;
+    }
+
+    @keyframes shine {
+        0% { transform: translate(0px, 5px); } 
+        50% { transform: translate(0px, -5px); }
+        100% { transform: translate(0px, 5px); }
+      }
+}
+
+
+@for $i from 1 through 35{
+    .text-animate._#{$i}{
+        animation-delay: #{$i/10}s;
+    }
+    
+}
