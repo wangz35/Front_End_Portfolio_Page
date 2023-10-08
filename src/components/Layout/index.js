@@ -7,11 +7,11 @@ const Layout = () => {
         <div className="App">
             <Sidebar />
             <div className='page'>
-                <span className='tags top-tags'>&lt;/body&gt;/</span>
+                <span className='tags top-tags'></span>
                 <Outlet />
-                <span className='tags bottom-tags'>&lt;/body&gt;
+                <span className='tags bottom-tags'>
                 <br />
-                    <span className='bottom-tags-html'>&lt;/html&gt;</span>
+                    <span className='bottom-tags-html'></span>
                 </span>
 
             </div>

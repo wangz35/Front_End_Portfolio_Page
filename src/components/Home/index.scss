@@ -16,7 +16,7 @@
         font-weight: 400;
 
         &::before{
-            content: '<h1>';
+            content: '';
             font-family: 'La Belle Aurore';
             color: #0099ff;
             font-size: 18px;
@@ -27,7 +27,7 @@
         }
 
         &::after{
-            content: '<h1>';
+            content: '';
             font-family: 'La Belle Aurore';
             color: #0099ff;
             font-size: 18px;
@@ -40,7 +40,7 @@
 
         }
         img{
-            width: 32px;
+            width: 50px;
             margin-left: 20px;
             opacity: 0;
             height: auto;
@@ -73,7 +73,7 @@
         white-space: nowrap;
 
         &:hover{
-            background: #0099ff;
+            background: linear-gradient(#0099ff, rgba(173, 216, 230, 0.5));
             color: #333;
         }
 

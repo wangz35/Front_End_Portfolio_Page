@@ -12,7 +12,7 @@ const Home = () =>
     const [letterClass, setletterclass]=useState('text-animate')
 
     const nameArray =['h','i', 'h', 'a', 'o', ' ','W','a','n','g,']
-
+    const name1 =['Graduate ',' ','student ',' ','majoring ',' ', 'in ',' ','Computer Science',' ', 'with ',' ','Master degree']
     useEffect(()=>{
         const timer = setTimeout(()=>{
             setletterclass('text-animate-hover')
@@ -36,7 +36,7 @@ const Home = () =>
                 <AnimatedLetters letterClass={letterClass}
                 strArray ={nameArray} idx = {15}/>
                 <br/>
-                Graduate student majoring in Computer Science with Master degree
+                <AnimatedLetters letterClass={letterClass} strArray ={name1} idx = {15}/>
                 </h1>
                 <h2>Software Engineer/ Developer/ Data Engineer</h2>
                 

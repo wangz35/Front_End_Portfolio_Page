@@ -1,0 +1,55 @@
+.Contact{
+    position: relative;
+    max-width: 200px;
+    margin: 100px 100px;
+    height: 800px;
+    top: 20%;
+    left: 30%;
+}
+
+.atleft{
+    left: -200px;
+    top: 0px;
+}
+
+.atmid{
+    left: 150px;
+    top:- 26%;
+}
+.atright{
+    left: 500px;
+    top:- 52%;
+}
+
+.experience_block{
+    padding: 30px 50px;
+    position: absolute;
+    width: 40%;
+    background: rgba(0,0,0,0.3);
+    animation: moving_right 1s linear forwards;
+    opacity: 0;
+}
+
+.test_box{
+    padding: 20px 30px;
+    background: #fff;
+    width: 30%;
+    border: 1px solid #ccc;
+    position: absolute;
+    border-radius: 6px;
+    font-size: 15px;
+    text-align: center;
+    img{
+            width: 100px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+    }
+    h2{
+    }
+    p{
+        
+    }
+}

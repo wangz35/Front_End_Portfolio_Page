@@ -1,0 +1,125 @@
+.timeline{
+    position: relative;
+    max-width: 4000px;
+    margin: 100px 100px;
+    height: 800px;
+}
+
+.experience_block{
+    padding: 30px 50px;
+    position: absolute;
+    width: 30%;
+    background: rgba(0,0,0,0.3);
+    animation: moving_right 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes moving_right {
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.experience_block:nth-child(1){
+    animation-delay: 0s;
+}
+.experience_block:nth-child(2){
+    animation-delay: 1s;
+}
+.experience_block:nth-child(3){
+    animation-delay: 2s;
+}
+.experience_block:nth-child(4){
+    animation-delay: 3s;
+}
+.experience_block:nth-child(5){
+    animation-delay: 4s;
+}
+.test_box{
+    padding: 5px 30px;
+    background: #fff;
+    width: 90%;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.right-top{
+    top: 10%;
+    left: 0;
+}
+
+.right-bottom{
+    bottom: 8%;
+    left: 40%;
+}
+
+.put3{
+    top: 8%;
+    left: 70%;
+}
+
+.experience_block img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right:20px;
+    top: 32px;
+}
+
+.timeline::after{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 6px;
+    background: #fff;
+    left:0;
+    top: 50%;
+    margin-top: 3px;
+    z-index: 1;
+    animation: moveline 3s linear forwards;
+    
+}
+
+@keyframes moveline{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.up_arrow{
+    height:0;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+    z-index:1;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    top: -20px;
+
+}
+
+.down_arrow{
+    height:0;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+    z-index:1;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    bottom: -20px;
+
+}
