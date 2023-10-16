@@ -6,8 +6,12 @@ import About from './components/About';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
+import React, { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = "Zhihao Wang Portfolio Site";
+  }, []);
   return (
     <>
     <Routes>
